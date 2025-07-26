@@ -12,6 +12,6 @@ Faire des commits pour me permettre de suivre chaque code sur github
 Clone le project 
 creer ta branche
 travaille a l'interieur de ta branche 
-faire des commits pour me permettre de voor ton evolution
+faire des commits pour me permettre de voir ton evolution
 .
 ### Deadline 10 Aout 2025.
