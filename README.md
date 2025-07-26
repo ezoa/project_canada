@@ -6,7 +6,6 @@ Chaque matière doit avoir 3 notes, avec un coefficient de 1 pour chaque note.
 
 Le programme doit afficher la moyenne de chaque matière ainsi que la moyenne générale.
 
-Creer un github du projet et m'ajouter
 
 Faire des commits pour me permettre de suivre chaque code sur github
 
