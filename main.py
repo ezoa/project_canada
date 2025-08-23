@@ -4,10 +4,34 @@
 # math=int(input("entre un nombre de 1 a 10 POUR MATH"))
 # resultat=(francais+anglais+math)/3
 # print("votre moyenne est ",resultat)
-import tkinter as tk
-root=tk.Tk
-def moyenne():
-    francais=int(input("entrez les notes de 1 a 10 en francais"))
-    anglais =int(input("entrez les notes de 1 a 10 en anglais"))
-    math=int(input("entrez les notes de 1 a 10 en math"))
-    return francais,anglais,math
+from tkinter import *
+
+
+r= Tk()
+r.title("caculatrice de moyenne")
+Label(r, text="Français").grid(row=0, column=0)
+francaisentry = Entry(r)
+francaisentry.grid(row=0, column=1)
+
+Label(r, text="Anglais").grid(row=1, column=0)
+ANGLAISentry = Entry(r)
+ANGLAISentry.grid(row=1, column=1)
+
+Label(r, text="Math").grid(row=2, column=0)
+mathentry = Entry(r)
+mathentry.grid(row=2, column=1)
+
+
+def ajouter():
+    try:     
+        francais = int(francaisentry.get())
+        anglais = int(ANGLAISentry.get())      
+        math = int(mathentry.get()) 
+        resultat = (francais + anglais + math) / 3
+        print("votre moyenne est ", resultat)
+    except ValueError:
+        print("Veuillez entrer des nombres valides ou sinon je vous ban.")
+
+Button(r, text="calculer la moyenne", command=ajouter).grid(row=3, column=0, columnspan=2)
+r.mainloop()
+ 
