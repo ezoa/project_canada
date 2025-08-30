@@ -28,9 +28,11 @@ def ajouter():
         anglais = int(ANGLAISentry.get())      
         math = int(mathentry.get()) 
         resultat = (francais + anglais + math) / 3
-        print("votre moyenne est ", resultat)
+        Label(r, text=f"votre moyenne est  {resultat}",fg="green").grid(row=4, column=0, columnspan=2)
+        # print("votre moyenne est ", resultat)
     except ValueError:
-        print("Veuillez entrer des nombres valides ou sinon je vous ban.")
+        Label(r, text="Veuillez entrer des nombres valides ou sinon je vous ban.",fg="red").grid(row=4, column=0, columnspan=2)
+        # print("Veuillez entrer des nombres valides ou sinon je vous ban.")
 
 Button(r, text="calculer la moyenne", command=ajouter).grid(row=3, column=0, columnspan=2)
 r.mainloop()
